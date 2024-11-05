@@ -65,3 +65,122 @@ footer {
     width: 165px;
     height: auto;
 }
+/* Estilos gerais do body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Estilos do header */
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos da bolinha de perfil */
+.profile {
+    position: absolute;
+    top: 20px;   /* Distância do topo */
+    left: 20px;  /* Distância da esquerda */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 100; /* Garante que a bolinha fique em cima do conteúdo */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+}
+
+/* Menu dropdown oculto por padrão */
+.profile-dropdown {
+    display: none; /* Inicialmente o menu estará oculto */
+    position: absolute;
+    top: 60px;  /* Distância do topo da bolinha de perfil */
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 10px 0;
+    z-index: 99; /* Garante que o menu fique em cima do conteúdo */
+}
+/* Estilos da bolinha de perfil */
+.profile {
+    position: absolute;
+    top: 20px;   /* Distância do topo */
+    left: 20px;  /* Distância da esquerda */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 100; /* Garante que a bolinha fique em cima do conteúdo */
+}
+
+/* Estilos da imagem de perfil */
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+}
+
+/* Menu dropdown oculto por padrão */
+.profile-dropdown {
+    display: none; /* Inicialmente o menu estará oculto */
+    position: absolute;
+    top: 60px;  /* Distância do topo da bolinha de perfil */
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 10px 0;
+    z-index: 99; /* Garante que o menu fique em cima do conteúdo */
+}
+
+/* Estilo para o menu dropdown */
+.profile-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-dropdown ul li {
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.profile-dropdown ul li:last-child {
+    border-bottom: none;
+}
+
+.profile-dropdown ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-dropdown ul li strong {
+    display: block;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Nova classe que vai controlar a visibilidade do menu */
+.profile-dropdown.show {
+    display: block;
+}
+
+/* Estilos para o menu dropdown */
+.profile-dropdown.show {
+    display: block; /* Torna o menu visível quando a classe 'show' for adicionada */
+}
