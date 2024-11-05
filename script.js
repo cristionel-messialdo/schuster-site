@@ -7,14 +7,13 @@ profileButton.addEventListener('click', function(event) {
     // Impede que o clique na bolinha feche o menu imediatamente
     event.stopPropagation(); 
 
-    // Alterna a classe 'show' para exibir ou ocultar o menu
+    // Alterna a classe 'show' para exibir ou ocultar o menu com animação
     dropdownMenu.classList.toggle('show');
 });
 
 // Fecha o menu dropdown se o usuário clicar fora da bolinha ou do menu
 document.addEventListener('click', function(event) {
-    // Verifica se o clique foi fora da bolinha ou do menu dropdown
     if (!profileButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
-        dropdownMenu.classList.remove('show'); // Remove a classe 'show' para ocultar o menu
+        dropdownMenu.classList.remove('show');
     }
 });
